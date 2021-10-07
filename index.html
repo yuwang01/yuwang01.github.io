@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Yu Wang's Portfolio - Projects">
+    <meta name="author" content="Yu Wang">
+
+    <title>Yu Wang</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<div class="hidden">
+	<script type="text/javascript">
+		<!--//--><![CDATA[//><!--
+			var images = new Array()
+			function preload() {
+				for (i = 0; i < preload.arguments.length; i++) {
+					images[i] = new Image()
+					images[i].src = preload.arguments[i]
+				}
+			}
+			preload(
+				"images/ORSPH.png",
+				"images/bunny.png",
+				"images/2_6_PBM_icon.png",
+				"images/sph_icon_80.png",
+				"images/breakDamCollage_80.png",
+				"images/sf_devm.png",
+				"images/devmap.png",
+				"images/reconstruction.png"
+			)
+		//--><!]]>
+	</script>
+</div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand">Yu Wang</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html">Projects</a>
+                    </li>
+                    
+                    <li>
+                        <a href="3_About/about.html">About</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+		<header class="jumbotron hero-spacer">
+            <p class="fh" align="center">
+            Computer graphics, computer vision, virtual reality, etc.
+            </p>
+        </header>
+        
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="f1">Projects
+                    <small></small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+	
+    	<hr>
+        <!-- Project One -->
+                <div class="row">
+            <div class="col-md-7">
+                <a href="2_6_PBM/2_6_PBM.html">
+                    <img class="img-responsive" src="images/2_6_PBM_icon.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">Particle-Based Melting</h3>
+                <h4 class="f1"><small>SPH + Shape Matching</small></h4>
+                <p class="f1" align="justify">We present a framework (PBM) for modeling solid-fluid phase change. Our framework is physically-motivated, with geometric constraints applied to the input set of particles to define rigid dynamics.</p>
+                <p class="f1" align="justify">Programming language and APIs: C, OpenGL, OpenCL</p>
+                <a class="btn btn-primary" href="2_6_PBM/2_6_PBM.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <hr>
+        <!-- Project One -->
+                <div class="row">
+            <div class="col-md-7">
+                <a href="2_1_SPH_w_MC/sph_w_mc.html">
+                    <img class="img-responsive" src="images/breakDamCollage_80.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">Marching Cubes and Mesh Smoothing</h3>
+                <h4 class="f1"><small>SPH + Marching Cubes + Curved PN-Triangles</small></h4>
+                <p class="f1" align="justify">Marching cubes visualzation of SPH simulation. Vertex normals are computed as interpolated gradient of density field. Curved PN-triangle is applied to smooth the mesh.</p>
+                <p class="f1" align="justify">Programming language and APIs: C, OpenGL, OpenCL</p>
+                <a class="btn btn-primary" href="2_1_SPH_w_MC/sph_w_mc.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+         <hr>
+		
+        <!-- Project Two -->
+        <div class="row">
+            <div class="col-md-7">
+                <a href="2_0_SPH_WebGL_WebCL/sph_webgl_webcl.html">
+                    <img class="img-responsive" src="images/sph_icon_80.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">Fluid Simulation in a Browser</h3>
+                <h4 class="f1"><small>SPH + WebGL + WebCL</small></h4>
+                <p class="f1" align="justify">Smoothed Particle Hydrodynimics implementation in a browser. Near density and near pressure are used to resolve particle clustering artifact. WebGL and WebCL share computing resources via interoperability.</p>
+                <p class="f1" align="justify">Programming language and APIs: Javascript, WebGL, WebCL</p>
+                <a class="btn btn-primary" href="2_0_SPH_WebGL_WebCL/sph_webgl_webcl.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-7">
+                <a href="2_5_OculusSPH/2_5_OculusSPH.html">
+                    <img class="img-responsive" src="images/ORSPH.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">Fluid Simulation in Virtual Reality</h3>
+                <h4 class="f1"><small>SPH + Oculus DK2</small></h4>
+                <p class="f1" align="justify">Particle-based fluid simulation integrated with head mount display, i.e. Oculus DK2.</p>
+                <p class="f1" align="justify">Programming language and APIs: C, OpenGL, OpenCL</p>
+                <a class="btn btn-primary" href="2_5_OculusSPH/2_5_OculusSPH.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <div class="row">
+            <div class="col-md-7">
+                <a href="2_7_Sandbox/2_7_Sandbox.html">
+                    <img class="img-responsive" src="images/bunny.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">WebGL Shader Sandbox</h3>
+                <h4 class="f1"><small>Shader Development in a Browser</small></h4>
+                <p class="f1" align="justify">A minimum shader sandbox for ambient+specular+diffuse shading.</p>
+                <p class="f1" align="justify">Programming language and APIs: Javascript, WebGL</p>
+                <a class="btn btn-primary" href="2_7_Sandbox/2_7_Sandbox.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        
+        <hr>
+
+        <!-- Project Three -->
+        
+        <div class="row">
+            <div class="col-md-7">
+                <a href="2_2_Fluid_devmap/2_2_Fluid_devmap.html">
+                    <img class="img-responsive" src="images/sf_devm.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">Real-Time Flow Map Generation</h3>
+                <h4 class="f1"><small>Stable Fluids + Derivative Map</small></h4>
+                <p class="f1" align="justify">In this project, we present a technique for generating flow map in real-time. The proposed technique can be used in interactive game applications to perturb the object surface normal and produce the effect of flowing water or any fluid with similar behavior.</p>
+                <p class="f1" align="justify">Programming language and APIs: C, OpenGL</p>
+                
+                <a class="btn btn-primary" href="2_2_Fluid_devmap/2_2_Fluid_devmap.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <hr>
+
+		<!-- Project Four -->        
+        <div class="row">
+            <div class="col-md-7">
+                <a href="2_3_devmap/2_3_devmap.html">
+                    <img class="img-responsive" src="images/devmap.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">Portal 2 Water Effect</h3>
+                <h4 class="f1"><small>Derivative Map</small></h4>
+                <p class="f1" align="justify">This project combines two technical features: velocity field lookup for object surface normal perturbation for bump mapping (Vlachos) and applying derivative map (Mikkelsen) for tangent space generation without knowledge of the parametric representation of the model.</p>
+                <p class="f1" align="justify">Programming language and APIs: C, OpenGL</p>
+                <a class="btn btn-primary" href="2_3_devmap/2_3_devmap.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        
+        <!-- Project Five -->        
+        <div class="row">
+            <div class="col-md-7">
+                <a href="2_4_Reconstruction/2_4_Reconstruction.html">
+                    <img class="img-responsive" src="images/reconstruction.png" width="2000" alt="">
+                </a>
+            </div>
+            <div class="col-md-5">
+                <h3 class="f1">3D Model Reconstruction</h3>
+                <h4 class="f1"><small>Creating Point Clouds Using Photographs</small></h4>
+                <p class="f1" align="justify">The primary application is scanning forest canopies and assisting scientific applications such as fire hazard evaluation and vegetation biomass estimation, using photos taken from a radio-controlled helicopter, although the methods apply to any series of photographs taken along a path. The approach is based on the fact that the photos are taken in a continuous path, thus taking advantage of the adjacency between images.</p>
+                <a class="btn btn-primary" href="2_4_Reconstruction/2_4_Reconstruction.html">Detail<span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Yu Wang 2016</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
