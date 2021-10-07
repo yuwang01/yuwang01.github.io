@@ -1,2 +1,2 @@
-# yuwang01.github.io
+# A repository for my computer graphics projects
  
